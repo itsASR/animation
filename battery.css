@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+
+.main{
+    display: flex;
+}
+
+
+.batterydiv{
+    margin-top: 100px ;
+    margin-left: 200px;
+    width: 150px;
+    height: 50px;
+    /* background-color: yellow; */
+    border: 5px solid yellow;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.batterypoint{
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    margin-top: 120px;
+}
+
+.power{
+    width: 94%;
+    height: 80%;
+    background-color: yellow;
+    position: relative;
+    margin-left: 5px;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-name: batterypower;
+    animation-duration: 4s;
+}
+
+@keyframes batterypower {
+    0% {width: 0px;}
+    50% {width: 50px;}
+    75% {width: 100px;}
+    /* 100% {width: 100px;} */
+}

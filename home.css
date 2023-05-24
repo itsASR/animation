@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* 
+@keyframes myani{
+    0%   {top: 50px; left: 50px;}
+    25%  {top: 0px; left: 100px;}
+    50%  {top: 50px; left: 150px;}
+    75%  {top: 0px; left: 200px;}
+    100% {top: 50px; left: 250px;}
+  } */
+
+  @keyframes myani{
+    0%   {top: 0px; left: 0px;}
+    25%  {top: 50px; left: 50px;}
+    50%  {top: 0px; left: 100px;}
+    75%  {top: 50px; left: 150px;}
+    100% {top: 0px; left: 200px;}
+  }
+
+
+.ball{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation-name: myani;
+    animation-duration: 4s;
+    background-color: red;
+    animation-direction: alternate;  
+    position: relative;
+    animation-iteration-count: 2;
+    animation-timing-function: linear;
+
+
+
+}
